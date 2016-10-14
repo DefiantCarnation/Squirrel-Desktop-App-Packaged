@@ -33,7 +33,7 @@ class FileCardContainer extends React.Component {
     var toload = 'file://' + url + '/article.html';
 
     win.loadURL(toload);
-    win.webContents.openDevTools()
+    
   }
 
   render() {

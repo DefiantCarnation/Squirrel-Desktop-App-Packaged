@@ -36,12 +36,12 @@ var linksArray = [];
 
 exports.call = () => {
 //  console.log('IN CALL')
-  request(`http://45.55.15.147:8888/links/${id}`)
+  request(`http://localhost:8888/links/${id}`)
   .then((data1) => {
     console.log(data1, 'what is in data1');
     data1 = JSON.parse(data1);
     extractMyLinks(data1);
-    request(`http://45.55.15.147:8888/friends/${id}`)
+    request(`http://localhost:8888/friends/${id}`)
     .then((data2) => {
       data2 = JSON.parse(data2);
       extractFriendLinks(data2)

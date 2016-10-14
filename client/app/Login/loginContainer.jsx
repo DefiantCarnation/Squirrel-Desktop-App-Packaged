@@ -18,7 +18,7 @@ class LoginContainer extends React.Component {
     const password = this.state.password;
     // this.username.value = '';
     // this.password.value = '';
-    fetch('http://45.55.15.147:8888/login2', {
+    fetch('http://localhost:8888/login2', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
